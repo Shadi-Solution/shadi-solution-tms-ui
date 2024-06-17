@@ -9,7 +9,7 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh', 'prettier'],
+  plugins: ['react-refresh', 'prettier', '@stylistic'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
@@ -17,9 +17,13 @@ module.exports = {
     ],
     'no-console': 'warn',
     'arrow-body-style': ['error', 'as-needed'],
-    semi: ['error', 'always'],
     'no-duplicate-imports': 'error',
     'array-callback-return': 'error',
     '@typescript-eslint/array-type': 'error',
+
+    // Deprecated from eslint
+    '@stylistic/semi': ['error', 'always'],
+    '@stylistic/block-spacing': 'error',
+    '@stylistic/no-trailing-spaces': ['error', { ignoreComments: true }],
   },
 };

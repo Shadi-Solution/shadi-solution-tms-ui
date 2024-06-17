@@ -5,7 +5,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -17,5 +17,9 @@ module.exports = {
     ],
     'no-console': 'warn',
     'arrow-body-style': ['error', 'as-needed'],
+    semi: ['error', 'always'],
+    'no-duplicate-imports': 'error',
+    'array-callback-return': 'error',
+    '@typescript-eslint/array-type': 'error',
   },
-}
+};

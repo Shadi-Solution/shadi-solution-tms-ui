@@ -1,9 +1,10 @@
 module.exports = {
-  trailingComma: 'es5', // todo
+  printWidth: 80,
+  trailingComma: 'all',
   tabWidth: 2,
   singleQuote: true,
   semi: true,
   trailingComma: 'all',
   bracketSpacing: true,
-  arrowParens: 'always',// todo
+  arrowParens: 'avoid',
 };

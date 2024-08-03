@@ -5,7 +5,7 @@ import { Button } from '@/components/ui';
 function App() {
   return (
     <div>
-      <h1>Shadi solution tms ui</h1>
+      <h1 className="text-2xl">Shadi solution TMS-UI</h1>
       <Wrapper />
       <Badge variant={'secondary'}>I am Badge</Badge>
       <Button variant={'outline'} size={'sm'}>
